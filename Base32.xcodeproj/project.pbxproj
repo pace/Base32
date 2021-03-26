@@ -83,7 +83,6 @@
 		C996EC671A74F2190076B105 /* Base32.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Base32.h; sourceTree = "<group>"; };
 		C996EC6D1A74F2190076B105 /* Base32Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Base32Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C996EC741A74F2190076B105 /* Base32Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Base32Tests.m; sourceTree = "<group>"; };
-		C996EC941A74FA390076B105 /* macOS-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "macOS-Application.xcconfig"; path = "Carthage/Checkouts/xcconfigs/macOS/macOS-Application.xcconfig"; sourceTree = SOURCE_ROOT; };
 		C996EC9F1A7500D30076B105 /* Base32.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Base32.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C996ECA91A7500D30076B105 /* Base32Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Base32Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C99ECD5B1DCC2DCC00A1BF3C /* Base32.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base32.xcconfig; sourceTree = "<group>"; };
@@ -283,7 +282,6 @@
 			children = (
 				C9357C191DCD7B6B007C1419 /* Base32 */,
 				C9357C1A1DCD7B73007C1419 /* Base32Tests */,
-				C996EC941A74FA390076B105 /* macOS-Application.xcconfig */,
 			);
 			name = Targets;
 			sourceTree = "<group>";
@@ -443,7 +441,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = MF_;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = Freshcode;
 				TargetAttributes = {
 					0DDF90E1158A1A0F00D44611 = {
@@ -603,6 +601,36 @@
 			baseConfigurationReference = C9357C1C1DCD7BE4007C1419 /* Project-Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_OSACOMPILEFLAGS = "";
 			};
 			name = Debug;
 		};
@@ -611,13 +639,42 @@
 			baseConfigurationReference = C9357C1D1DCD7BFF007C1419 /* Project-Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_OSACOMPILEFLAGS = "";
 			};
 			name = Release;
 		};
 		0DDF9101158A1A1000D44611 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C996EC941A74FA390076B105 /* macOS-Application.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				DEVELOPMENT_TEAM = 35MFYY2JY5;
 				GCC_PREFIX_HEADER = "Base32/Base32-Prefix.pch";
 				INFOPLIST_FILE = "Base32/Base32-Info.plist";
@@ -629,8 +686,9 @@
 		};
 		0DDF9102158A1A1000D44611 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C996EC941A74FA390076B105 /* macOS-Application.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				DEVELOPMENT_TEAM = 35MFYY2JY5;
 				GCC_PREFIX_HEADER = "Base32/Base32-Prefix.pch";
 				INFOPLIST_FILE = "Base32/Base32-Info.plist";
@@ -644,6 +702,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C99ECD5F1DCC2E0100A1BF3C /* Base32-watchOS.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 			};
 			name = Debug;
 		};
@@ -651,6 +710,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C99ECD5F1DCC2E0100A1BF3C /* Base32-watchOS.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 			};
 			name = Release;
 		};
@@ -658,6 +718,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C9357C131DCD6F43007C1419 /* Base32-tvOS.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 			};
 			name = Debug;
 		};
@@ -665,6 +726,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C9357C131DCD6F43007C1419 /* Base32-tvOS.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 			};
 			name = Release;
 		};
@@ -672,6 +734,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C9357C141DCD6F5A007C1419 /* Base32Tests-tvOS.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 			};
 			name = Debug;
 		};
@@ -679,6 +742,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C9357C141DCD6F5A007C1419 /* Base32Tests-tvOS.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 			};
 			name = Release;
 		};
@@ -686,6 +750,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C99ECD5D1DCC2E0100A1BF3C /* Base32-iOS.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CURRENT_PROJECT_VERSION = 1.2.0;
+				DEFINES_MODULE = YES;
+				EXCLUDED_ARCHS = "";
+				MARKETING_VERSION = 1.2.0;
+				OTHER_CFLAGS = "";
+				OTHER_OSACOMPILEFLAGS = "";
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -693,6 +766,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C99ECD5D1DCC2E0100A1BF3C /* Base32-iOS.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CURRENT_PROJECT_VERSION = 1.2.0;
+				DEFINES_MODULE = YES;
+				EXCLUDED_ARCHS = "";
+				MARKETING_VERSION = 1.2.0;
+				OTHER_CFLAGS = "";
+				OTHER_OSACOMPILEFLAGS = "";
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
@@ -700,6 +782,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C99ECD601DCC2E1F00A1BF3C /* Base32Tests-iOS.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				DEVELOPMENT_TEAM = 35MFYY2JY5;
 			};
 			name = Debug;
@@ -708,6 +791,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C99ECD601DCC2E1F00A1BF3C /* Base32Tests-iOS.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				DEVELOPMENT_TEAM = 35MFYY2JY5;
 			};
 			name = Release;
@@ -716,6 +800,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C99ECD5E1DCC2E0100A1BF3C /* Base32-macOS.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 			};
 			name = Debug;
 		};
@@ -723,6 +808,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C99ECD5E1DCC2E0100A1BF3C /* Base32-macOS.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 			};
 			name = Release;
 		};
@@ -730,6 +816,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C99ECD611DCC2E1F00A1BF3C /* Base32Tests-macOS.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 			};
 			name = Debug;
 		};
@@ -737,6 +824,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C99ECD611DCC2E1F00A1BF3C /* Base32Tests-macOS.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 			};
 			name = Release;
 		};

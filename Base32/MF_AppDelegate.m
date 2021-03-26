@@ -7,7 +7,7 @@
 //
 
 #import "MF_AppDelegate.h"
-@import Base32;
+#import "Base32/Base32.h"
 
 @implementation MF_AppDelegate
 
