@@ -602,6 +602,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C9357C1C1DCD7BE4007C1419 /* Project-Debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 			};
 			name = Debug;
 		};
@@ -609,6 +610,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C9357C1D1DCD7BFF007C1419 /* Project-Release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 			};
 			name = Release;
 		};
